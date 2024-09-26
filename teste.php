@@ -1,7 +1,7 @@
 <?php
 // Jogo de pedra, papel e tesoura.
 
-$jogador1 = (readline("Faça sua jogada (pedra, papel, tesoura): "));
+$jogador1 = strtolower(readline("Faça sua jogada (pedra, papel, tesoura): "));
 $jogadas = ["pedra", "papel", "tesoura"];
 $jogador2 = $jogadas[array_rand($jogadas)];
 echo "Jogador 2 fez: $jogador2 \n";
